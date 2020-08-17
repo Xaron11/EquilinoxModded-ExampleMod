@@ -12,10 +12,11 @@ import tasks.ShopItemUnlockReward;
 import tasks.TaskRequirement;
 import tasks.TaskUnlockReward;
 
+// CustomTask class inherited from com.xaron.equilinoxmodded.framework.Task;
 public class CustomTask extends Task {
 
 	public CustomTask() {
-		super("Custom Task", "Custom task description.");
+		super("Custom Task", "Custom task description.", false);
 	}
 
 	@Override

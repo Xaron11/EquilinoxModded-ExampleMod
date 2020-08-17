@@ -9,4 +9,4 @@ bin
 
 # Ignore run directory contents except mods folder
 run/*
-!run/mods
+!run/mods/*.keep

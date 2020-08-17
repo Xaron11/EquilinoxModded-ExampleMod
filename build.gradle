@@ -5,11 +5,7 @@
  * For more details take a look at the Java Libraries chapter in the Gradle
  * User Manual available at https://docs.gradle.org/6.5.1/userguide/java_library_plugin.html
  */
-
-plugins {
-    // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
-}
+apply plugin: 'java-library'
 
 repositories {
     // Use jcenter for resolving dependencies.
@@ -24,14 +20,14 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:29.0-jre'
 
-	implementation files('D:/Programy/Steam/steamapps/common/Equilinox/EquilinoxModdedProject.jar')
-	implementation files('D:/Programy/Steam/steamapps/common/Equilinox/EquilinoxWindows.jar')
+	implementation files('/run/EquilinoxWindows - Modded.jar')
 	
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
 }
 
 jar {
-	destinationDirectory = file('D:/Programy/Steam/steamapps/common/Equilinox/mods')
-	// destinationDirectory = file('/run/mods')
+
+	destinationDirectory = file('/run/mods')
+	
 }
