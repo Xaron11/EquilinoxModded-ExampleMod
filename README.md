@@ -1,4 +1,4 @@
-# EquilinoxModded-ExampleMod
+# ExampleMod
 This is an example mod created with [EquilinoxModded framework](https://github.com/Xaron11/EquilinoxModded).
 
 ## Create Your Own Mod
